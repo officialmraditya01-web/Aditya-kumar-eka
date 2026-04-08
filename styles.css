@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #333;
+}
+
+header {
+    background: linear-gradient(to right, #001a4d, #8b008b);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffff00;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+    margin: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+#hero {
+    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 50%, #c44569 100%);
+    color: white;
+}
+
+#hero h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#hero p {
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+#courses {
+    background: linear-gradient(to bottom, #fafafa, #f5f5f5);
+}
+
+#courses h2 {
+    color: #001a4d;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+#courses ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#courses li {
+    padding: 20px;
+    font-weight: bold;
+    font-size: 1.3em;
+    border-radius: 8px;
+    color: white;
+    transition: transform 0.3s;
+}
+
+#courses li:hover {
+    transform: scale(1.1);
+}
+
+#courses li:nth-child(1) {
+    background: #003d99;
+}
+
+#courses li:nth-child(2) {
+    background: #c2185b;
+}
+
+#courses li:nth-child(3) {
+    background: #2e7d32;
+}
+
+#courses li:nth-child(4) {
+    background: #ff9800;
+}
+
+#courses li:nth-child(5) {
+    background: #7b1fa2;
+}
+
+#courses li:nth-child(6) {
+    background: #8b0000;
+}
+
+#about {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+#about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+#contact {
+    background: linear-gradient(to right, #001a4d, #003d99);
+    color: white;
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+#contact p {
+    font-size: 1.2em;
+    margin: 15px 0;
+}
+
+footer {
+    background: #000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #hero h2 {
+        font-size: 1.8em;
+    }
+
+    #courses ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
